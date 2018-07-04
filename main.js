@@ -63,3 +63,53 @@ brit.forEach(function(item) {
 // Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
 // Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
 // Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
+
+// var wood = items.filter(function(item) {
+//   return item.materials == "wood";
+// });
+// console.log(wood)
+// wood.forEach(function(item) {
+//   console.log(item.descrition);
+// });
+
+// var materials = items.forEach(function(item) {
+//   console.log(item.materials);
+// });
+//
+// materials.forEach(function(item) {
+//   console.log(["wood"]);
+// });
+
+// question 5
+// Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
+// Qty of 2 Groomsmen Gift - Stainless Steel Personalized Bottle Opener - NO Capcatcher has 9 materials:
+// wall mount bottle opener
+// wedding
+// man cave
+// christmas gift
+// guy gift
+// fathers day
+// home bar
+// beer
+// bar
+// The Three Broomsticks Customizable Beer Stein Mug, Harry Potter  Inspired, hogsmeade village, harry potter gift, three broomsticks mug  has 13 materials:
+// glass
+// sandblast cabinet
+// vinyl
+// beer glass
+// pint glass
+// etched pint glass
+// etched glass
+// etched beer glass
+// 16 oz pint
+// beer gift
+// etched harry potter glass
+// the three broomsticks glass
+// personalized harry potter glass
+
+var x = items.filter(function(item) {
+  return item.materials.length >= 8;
+});
+x.forEach(function(item) {
+  console.log(item.title + item.materials);
+});
