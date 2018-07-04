@@ -113,3 +113,12 @@ var x = items.filter(function(item) {
 x.forEach(function(item) {
   console.log(item.title + item.materials);
 });
+
+// question 6
+// Show me how to calculate how many items were made by their sellers. Please console.log your answer.
+// 18 were made by their sellers
+
+var self = items.filter(function(item) {
+  return item.who_made === "i_did";
+});
+console.log(self.length + " were made by their sellers")
